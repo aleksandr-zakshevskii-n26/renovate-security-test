@@ -26,7 +26,7 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
-            <version>10.1.30</version>
+            <version>10.1.54</version>
         </dependency>
 
         <!-- CVE fixed in 4.1.118.Final -->
