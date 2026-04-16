@@ -1,0 +1,20 @@
+name: Dependency Graph
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  dependency-submission:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+      - name: Submit Maven dependency graph
+        uses: advanced-security/maven-dependency-submission-action@v4
