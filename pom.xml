@@ -9,10 +9,7 @@
     <version>1.0.0</version>
 
     <!-- Spring Boot 3.2.0 pulls in vulnerable transitive deps:
-         - log4j-core 2.21.1 (CVEs fixed in 2.25.4)
-         - tomcat-embed-core 10.1.16 (CVEs fixed in 10.1.34+)
-         - netty 4.1.100.Final (CVEs fixed in 4.1.118.Final)
-    -->
+         log4j-core 2.21.1, tomcat-embed-core 10.1.16, netty 4.1.101.Final -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -20,7 +17,6 @@
     </parent>
 
     <dependencies>
-        <!-- These starters pull in log4j, tomcat, netty as transitive deps -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
